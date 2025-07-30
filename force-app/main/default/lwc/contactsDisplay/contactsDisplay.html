@@ -1,0 +1,11 @@
+<template>
+    <lightning-input label="Search" placeholder="Search" value={searchKey} onchange={handleKeyChange}></lightning-input> 
+    <lightning-card title="Related Contacts"> Record Id - {recordId}
+        
+        <lightning-datatable
+                    key-field="id"
+                    data={contacts}
+                    columns={columns}>
+            </lightning-datatable>
+    </lightning-card>
+</template>
